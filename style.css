@@ -3,6 +3,7 @@
     margin: 0;
     font-family: arial, verdana, sans-serif;
     font-size: 14px;
+    
 }
 
  th, td {
@@ -41,13 +42,16 @@
     display: flex;
     justify-content: center;
     border-radius: 2px;
-    background-color: red;
+    background-color: rgb(246, 126, 126);
     color: white;
     padding: 3px;
     cursor: pointer;
     display: flex;
     justify-content: center;
     margin: auto;
+}
+#clear-button:hover{
+    background-color: red;
 }
 
 .action{

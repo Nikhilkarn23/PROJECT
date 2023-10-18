@@ -50,6 +50,10 @@ function addNewRow() {
     let expectedDrrInput = document.getElementById("Expected-drr")
     let lastUpdated = document.getElementById("last-upadted")
     let leadCount = document.getElementById("Lead-number").value
+    if (!checkEntitiesPresent(startDate,endDate,leadCount)){
+        alert (" please make sure all fields are satisfied")
+        retrun;
+    }
     if (!checkDateExcluded(startDate, endDate, dateExcluded)) {
 
         return;
@@ -138,5 +142,16 @@ mobiscroll.datepicker('#demo-mobile-picker-input', {
     controls: ['calendar'],
     selectMultiple: true
 });
+
+
+function checkEntitiesPresent(startDate, endDate, leadCount){
+    if (!isValidDate(startDate)  || !isValidDate(endDate)  || leadCount == ""){
+        return false;
+    }
+    return true;
+}
+function isValidDate(d) {
+    return d instanceof Date && !isNaN(d);
+}
 
 
