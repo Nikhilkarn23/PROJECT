@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+    <link href="css/mobiscroll.javascript.min.css" rel="stylesheet" />
+    <script src="js/mobiscroll.javascript.min.js"></script>
+</head>
+<body>
+    <table id="data">
+        <tr>
+            <th>Action</th>
+            <th>ID</th>
+            <th>Start Date</th>
+            <th>End Date</th>
+            <th>Month,Year</th>
+            <th>Dates Excluded</th>
+            <th>Number of Days</th>
+            <th>Lead count</th>
+            <th>Expected DRR</th>
+            <th>Last Updated</th>
+        </tr>
+        <tr>
+            <td><span class="action">N/A</span></td>
+            <td><span class="action">N/A</span></td>
+            <td><input class = "action" type="date" id="Start-date"></td>
+            <td><input class = "action" type="date" id="End-date"></td>
+            <td>10</td>
+            <td><div class="mbsc-grid">
+                <div class="mbsc-form-group">
+                    <div class="mbsc-row">
+                        <div class="mbsc-col-12">
+                            <input id="demo-mobile-picker-input" class="md-mobile-picker-input" placeholder="Please Select..." />
+                        </div>
+                    </div>
+                </div>
+               </td>
+            <td class = "action" id="number-days">120</td>
+            <td><input class = "action" type="number" id="Lead-number"></td>
+            <td><input class = "action" type="number" placeholder="0" id="Expected-drr"></td>
+            <!-- <td><input type="number" placeholder="1000" id="last-upadted"></td> -->
+            <td><button class = "action" id="save-button" onclick="addNewRow()">Save</button>
+                <button class = "action" id="clear-button" onclick="clearAllInputs()">&empty;Cancel</button>
+            </td>
+        </tr>
+    </table>
+    <p id = "output"> </p>
+    <script src="script.js"></script>
+   
+</body>
+</html>
